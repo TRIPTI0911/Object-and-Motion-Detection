@@ -3,6 +3,9 @@ from threading import Thread
 import uvicorn
 import motion_detector
 import time
+import os
+port = int(os.environ.get("PORT", 10000))
+
 
 app = FastAPI(title="Motion Detector API")
 
